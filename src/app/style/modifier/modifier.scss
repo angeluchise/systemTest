@@ -1,0 +1,189 @@
+.nav-item {
+  padding: 7px 6px;
+  font-size: 14px;
+  a {
+    color: white !important;
+  }
+}
+.nav-item.active  {
+  background: $dark-blue;
+  a {
+    color: $light-blue !important;
+  }
+}
+.relative {
+  position: relative;
+}
+.icon-number {
+  position: absolute;
+  font-size: 12px;
+  top: -7px;
+  left: -10px;
+  background: $red;
+  padding: 4px 2px;
+  font-weight: bold;
+  border-radius: 50%;
+  border: 2px solid $light-red;
+}
+body {
+  background: $body;
+}
+.bold {
+  font-weight: bold;
+}
+.container-form-material select {
+  background: transparent !important;
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 0 !important;
+}
+.container-form-material label {
+  display: block;
+}
+.container-form-material {
+  display: table;
+  float: left;
+  padding: 0 8px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.select {
+  font-family:
+    'Roboto','Helvetica','Arial',sans-serif;
+	position: relative;
+	width: 100%;
+}
+
+.select-text {
+	position: relative;
+	font-family: inherit;
+	background-color: transparent;
+	width: 100%;
+	padding: 10px 10px 10px 0;
+	font-size: 18px;
+	border-radius: 0;
+	border: none;
+  border-bottom: 1px solid black;
+  color: $dark-blue;
+}
+
+/* Remove focus */
+.select-text:focus {
+	outline: none;
+	border-bottom: 1px solid $blue;
+}
+
+	/* Use custom arrow */
+.select .select-text {
+	appearance: none;
+	-webkit-appearance:none
+}
+
+.select:after {
+	position: absolute;
+	top: 18px;
+	right: 10px;
+	/* Styling the down arrow */
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid rgba(0, 0, 0, 0.12);
+	pointer-events: none;
+}
+
+
+/* LABEL ======================================= */
+.select-label {
+	color: black;
+	font-size: 18px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 0;
+	top: 10px;
+	transition: 0.2s ease all;
+}
+
+/* active state */
+.select-text:focus ~ .select-label, .select-text:valid ~ .select-label {
+	color: $dark-blue;
+	top: -20px;
+	transition: 0.2s ease all;
+	font-size: 14px;
+}
+
+/* BOTTOM BARS ================================= */
+.select-bar {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.select-bar:before, .select-bar:after {
+	content: '';
+	height: 2px;
+	width: 0;
+	bottom: 1px;
+	position: absolute;
+	background: $dark-blue;
+	transition: 0.2s ease all;
+}
+
+.select-bar:before {
+	left: 50%;
+}
+
+.select-bar:after {
+	right: 50%;
+}
+
+/* active state */
+.select-text:focus ~ .select-bar:before, .select-text:focus ~ .select-bar:after {
+	width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.select-highlight {
+	position: absolute;
+	height: 60%;
+	width: 100px;
+	top: 25%;
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
+}
+.btn-customs {
+  border: 2px solid $dark-blue;
+  border-radius: 0;
+  color: $blue;
+  background: white;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.box-main {
+  height: 215px;
+}
+.box-main-small {
+  height: 100px;
+}
+.text-small {
+  position: relative;
+  top: -4px;
+  margin-right: 10px;
+}
+.btn-customs-small {
+  padding: 3px 10px 3px 10px !important;
+}
+.img-logo {
+  width: 101px;
+}
+button.navbar-toggler {
+  border: none;
+  span {
+    filter: brightness(0) invert(1);
+  }
+}

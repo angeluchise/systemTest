@@ -1,0 +1,12 @@
+.container-input {
+  background: white;
+  padding: 3px 13px;
+  margin-right: 20px;
+  input {
+    border: none;
+    background: transparent;
+  }
+  input:focus {
+    outline: none;
+  }
+}
