@@ -67,7 +67,7 @@ export class AppComponent {
   filter(sucursal, anio, mes) {
     (sucursal === 'todos') ? sucursal = null : sucursal;
     (anio === 'todos') ? anio = null : anio;
-    (mes === 'todos') ? anio = null : mes;
+    (mes === 'todos') ? mes = null : mes;
     if (sucursal || anio || mes) {
       this.dataFilter = this.data.filter((data) => {
         if (sucursal && !anio && !mes) {
