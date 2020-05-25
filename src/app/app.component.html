@@ -48,10 +48,10 @@
 </div>
 <div class="container m-top-20">
   <div class="row">
-    <div class="col-7 col-md-12">
+    <div class="col-6 col-md-12" [ngClass]="{ 'padd-right-0' : mobile}">
       <p class="color-dark-blue bold font-size-small">INFORME DE PRODUCTIVIDAD</p>
     </div>
-    <div class="col-5" *ngIf="mobile">
+    <div class="col-6 padd-left-0" *ngIf="mobile" >
       <button class="btn btn-customs float-right"><span *ngIf="mobile"><i class="fa fa-paper-plane" aria-hidden="true"></i></span> <span *ngIf="!mobile">Descargar</span></button>
       <button class="btn btn-customs float-right m-right-10"><span *ngIf="mobile"><i class="fa fa fa-download" aria-hidden="true"></i></span> <span *ngIf="!mobile">Descargar</span></button>
     </div>
